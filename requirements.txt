@@ -1,3 +1,4 @@
 dash
 dash-draggable
 pandas
+gunicorn
