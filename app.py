@@ -1,7 +1,6 @@
 #%%
 import dash 
 from dash import dcc,html
-import dash_bootstrap_components as dbc
 from components.extraUI import sidebar,top_navbar
 from dash.exceptions import PreventUpdate
 from dash.dependencies import Input,Output,State,ClientsideFunction
@@ -44,7 +43,7 @@ def update(n_clicks,style):
 
 def main():
     # app.run_server(debug=True)
-    app.run_server()
+    app.run_server(port=8051)
 
 if __name__ == '__main__':
     main()
