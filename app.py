@@ -8,6 +8,7 @@ import dash_draggable
 
 #%%
 app = dash.Dash(__name__,external_scripts=[{'src':"https://kit.fontawesome.com/b99e675b6e.js"}])
+server = app.server
 app.layout =html.Div(className="wrapper hover_collapse",children=[top_navbar,sidebar])
 
 @app.callback(
