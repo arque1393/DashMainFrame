@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;600&display=swap');
+*{
+	font-family: 'Baloo Paaji 2', cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	background: #d2b8ff;
+	-webkit-user-select: none;
+}
+.resizer {
+    flex-basis: 3px;  
+    position: relative;
+    z-index: 2;
+	top:0;
+	bottom: 0;
+	width:5px;
+	cursor: col-resize;
+    border-left: 1px solid rgba(0, 255, 26, 0.05);
+    border-right: 1px solid rgba(255, 0, 0, 0.4);
+    background: #008cff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+.top_navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	background: #111;
+	box-shadow: 1px 0 2px rgba(255,255,255,0.225);
+	display: flex;
+	align-items: left;
+}
+.top_navbar .logo{
+	flex:9;
+	width: 100%;
+	font-size: 25px;
+	font-weight: 700;
+	padding-left: 25px;
+	color: white;
+	text-transform: uppercase;
+	/* background-color: #ff0000; */
+}
+.top_navbar .menu{
+	width: 100%;
+	padding: 0 12px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	/* background-color: aquamarine; */
+}
+
+.top_navbar .hamburger{
+	font-size: 25px;
+	cursor: pointer;
+	color: white;
+	background-color: #111;
+	border: None;
+}
+
+.top_navbar .hamburger:hover{
+	color: #007dc3;
+}
+
+/* Now I have determined what the sidebar will look like for a responsive device */
+/* .hover_collapse .sidebar{
+	width: 50px;
+}
+.hover_collapse .main_content{
+	left: 50px;
+} */
+#setting{
+	display: block;
+	padding: 14px 15px;
+	position:fixed;
+	background-color:rgba(0, 0, 0, 0);
+	color:white;
+	border:None;
+	font-size: large;
+	margin:0px;
+	margin-bottom: 40px;
+	bottom:0;
+}
+#setting:hover{
+	background-color:#0e94d4;
+}
+.sidebar{
+	display: flex;
+	position: fixed;
+	top: 40px;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: #100020;
+	transition: 0.2s;
+	min-width: 50px;
+
+}
+.sidebar_content{
+	background-color: #30183b;
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.sidebar ul li a{
+	display: block;
+	padding: 14px 15px;
+	/* border-bottom: 1px solid #5b3a7a;
+	border-left: 1px solid #5b3a7a; */
+	color: #0e94d4;
+}
+.sidebar ul li a .icon{
+	font-size: 18px;
+  	color: white;
+	vertical-align: middle;
+}
+.sidebar ul li a .text{
+	margin-left: 19px;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 18px;
+	letter-spacing: 2px;
+}
+.sidebar ul li a:hover{
+	background: #0e94d4;
+	color: #fff;
+}
+
+.main_content{
+	position: fixed;
+	background-color: antiquewhite;
+	top:40px;
+	right:0px;
+	left:50px ;
+	z-index: -10;
+}
+
