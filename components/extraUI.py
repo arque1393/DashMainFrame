@@ -29,14 +29,23 @@ sidebar_inner = html.Div(className='sidebar_inner',children=[
             ])
         ]) for i in range(len(item_icon_list))]) ,
 
-    html.Button( id='setting',children=[
+        html.Button( id='setting',children=[
             html.Span(className= 'icon',children=[
                 html.I(className="fa fa-cog")
             ])
         ])
     ])
 
-sidebar_content=html.Div(className='sidebar_content',children=[])
+sidebar_content=html.Div(className='sidebar_content',children=[
+    html.Div(className="dataProcessor", children=[
+        html.Div(className='sidebar_item',children='Manage Data'),
+        html.Div(className='sidebar_item',children='Process Data'),
+        html.Div(className='sidebar_item',children='Visulazation')
+    ])
+
+
+
+])
 
 resizer = html.Div(id = 'resizer',className='resizer')
 

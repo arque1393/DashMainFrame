@@ -68,17 +68,11 @@ body{
 	color: #007dc3;
 }
 
-/* Now I have determined what the sidebar will look like for a responsive device */
-/* .hover_collapse .sidebar{
-	width: 50px;
-}
-.hover_collapse .main_content{
-	left: 50px;
-} */
 #setting{
 	display: block;
 	padding: 14px 15px;
 	position:fixed;
+	font-size: 20px;
 	background-color:rgba(0, 0, 0, 0);
 	color:white;
 	border:None;
@@ -88,7 +82,7 @@ body{
 	bottom:0;
 }
 #setting:hover{
-	background-color:#0e94d4;
+	background-color: rgb(0, 110, 220);;
 }
 .sidebar{
 	display: flex;
@@ -102,9 +96,28 @@ body{
 	min-width: 50px;
 
 }
+
+.dataProcessor{
+	position:relative;
+	/* border:20px  solid #500000; */
+	display: block;
+}
+.sidebar_item{
+	border-bottom: 1px solid #4e0d6c;
+	justify-content:center;
+	color:white;
+	font-size: 22px;
+	padding:10px 25px;
+
+}
+.sidebar_item:hover{
+	background-color: rgb(0, 110, 220);
+}
 .sidebar_content{
 	background-color: #30183b;
+	overflow: hidden;
 	position: relative;
+	display:block;
 	top: 0px;
 	left: 0;
 	width: 100%;
@@ -115,10 +128,10 @@ body{
 	padding: 14px 15px;
 	/* border-bottom: 1px solid #5b3a7a;
 	border-left: 1px solid #5b3a7a; */
-	color: #0e94d4;
+	color:  rgb(0, 110, 220);;
 }
 .sidebar ul li a .icon{
-	font-size: 18px;
+	font-size: 20px;
   	color: white;
 	vertical-align: middle;
 }
@@ -130,7 +143,7 @@ body{
 	letter-spacing: 2px;
 }
 .sidebar ul li a:hover{
-	background: #0e94d4;
+	background: rgb(0, 110, 220);;
 	color: #fff;
 }
 
